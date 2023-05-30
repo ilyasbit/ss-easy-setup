@@ -9,11 +9,11 @@ Requirement :
 
 ## Install on VPS as SSSERVER
 
-    sudo curl https://github.com/ilyasbit/ss-easy-setup/raw/main/install-server.sh | sudo bash -s
+    sudo curl https://raw.githubusercontent.com/ilyasbit/ss-easy-setup/main/install-server.sh | sudo bash -s
 
 ## Install on VPS as Router host multiple SSLOCAL
 
-    sudo curl https://github.com/ilyasbit/ss-easy-setup/raw/main/install-only.sh | sudo bash -s
+    sudo curl https://raw.githubusercontent.com/ilyasbit/ss-easy-setup/main/install-only.sh | sudo bash -s
 
 ## Run Multiple sslocal on Router
 
@@ -28,7 +28,7 @@ Requirement :
 
 - run this command, change the text-file.txt with your file
 
-    sudo curl https://github.com/ilyasbit/ss-easy-setup/raw/main/install-only.sh | sudo bash -s
+    sudo curl https://raw.githubusercontent.com/ilyasbit/ss-easy-setup/main/run-sslocal.sh | sudo bash -s -- text-file.txt
 
 ## List all screen session running sslocal
 
