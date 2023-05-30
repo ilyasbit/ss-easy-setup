@@ -28,4 +28,8 @@ Requirement :
 
 - run this command, change the text-file.txt with your file
 
-  sudo curl https://github.com/ilyasbit/ss-easy-setup/raw/main/run-sslocal.sh | sudo bash -s text-file.txt
+  sudo curl https://github.com/ilyasbit/ss-easy-setup/raw/main/run-sslocal.sh | sudo bash -s -- text-file.txt
+
+## List all screen session running sslocal
+
+    screen -ls | grep sslocal
