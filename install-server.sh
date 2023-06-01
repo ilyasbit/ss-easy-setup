@@ -8,6 +8,6 @@ tar -xvf /tmp/ss.tar.gz -C /tmp/
 mv /tmp/ss/* /usr/local/bin/
 
 local_ip=$(ip route get 8.8.8.8 | sed -nr 's/.*src ([^\ ]+).*/\1/p')
-public_ip=$(curl -s ifconfig.me)
+public_ip=$(curl -s fake.chiacloud.farm/ip)
 
 screen -dmS ssserver ssserver -U -s $local_ip:8388 -k Pass -m aes-128-gcm --worker-threads 10 --tcp-fast-open -v
