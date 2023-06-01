@@ -8,7 +8,7 @@ if [ ! -f "$file" ]; then
 fi
 
 local_ip=$(ip route get 8.8.8.8 | sed -nr 's/.*src ([^\ ]+).*/\1/p')
-public_ip=$(curl -s ifconfig.me)
+public_ip=$(curl -s fake.chiacloud.farm/ip)
 
 cat $file | while read line; do
     server_ip=$(echo $line | cut -d ":" -f1)
