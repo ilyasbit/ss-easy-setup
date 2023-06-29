@@ -44,7 +44,7 @@ After=network.target
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json
-User=nobody
+User=root
 
 [Install]
 WantedBy=multi-user.target
